@@ -1,5 +1,5 @@
 # STRONK-v1
-A 9 bit archetecture designed from scrach.  
+A 9 bit architecture designed from scratch.   
 
 #### instructions are 9 bits long: 
 9 bit words are called baker's bytes (or bbytes for short)  
@@ -20,7 +20,7 @@ There are four registers, each register is 9 bits long:
 #### Addresses are 11 bits long.
 Each memory word is 9 bits.  
 The #6 load number, #22 jump, and all memory operation are 2 bbytes long.  
-We get those 11 bits by concatinaing the last 2 bits of the intruction with the next bbyte.  
+We get those 11 bits by concatenating the last 2 bits of the instruction with the next bbyte.  
 
 #### Here is the list of OP codes:  
 
@@ -62,10 +62,10 @@ We get those 11 bits by concatinaing the last 2 bits of the intruction with the 
 10111 [23] "NOP" jump to the next bbyte (No Operation)
 ```
 
-##### Expiremental Operations: (don't use these (except HLT))  
+##### Experimental Operations: (don't use these (except HLT))  
 ```
 11000 [24] "VID" output the From register in 9 bit color (3R3G3B) to a pixel array given by the last 2 bits of the instruction and the next bbyte. (512 color!)
-11001 [25] "BEP" beep a tone from 0 to 2^18 -1 given from concatinating the From Register to the To Register. (18 bit sound!)
+11001 [25] "BEP" beep a tone from 0 to 2^18 -1 given from concatenating the From Register to the To Register. (18 bit sound!)
 11010 [26] "MUL" multiply the From Register to the To Register and put the first bbyte into the From Register and the second bbyte into the To register. 
 11011 [27] "SER" Output the From register to a 9 pin serial connector on the back of the computer.
 11100 [28] "SAV" Save the From Register to the stack. (the stack is bottomless)
