@@ -1,4 +1,4 @@
-# STRONK-v1
+# CIR-9
 A 9 bit architecture designed from scratch.   
 
 #### instructions are 9 bits long: 
